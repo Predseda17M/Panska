@@ -1,7 +1,7 @@
 import vzper_fce_tetmajer as vzper_tetmajer
-import vzper_fce_lambda as vzper_stihlost
-import vzper_fce_Jmin as vzper_Jmin
-import vzper_fce_reduk_delka as vzper_redk_delka
+import Vzper_fce_obecne.vzper_fce_lambda as vzper_stihlost
+import Vzper_fce_obecne.vzper_fce_Jmin as vzper_Jmin
+import Vzper_fce_obecne.vzper_fce_reduk_delka as vzper_redk_delka
 
 # ==========
 # vstupy skriptu jsou:

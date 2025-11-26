@@ -7,8 +7,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import vzper_fce_krit_sila as vzper
-import vzper_fce_delka_tyce as vzper_delka
-import vzper_fce_lambda as vzper_stihlost
+import Vzper.Vzper_fce_obecne.vzper_fce_delka_tyce as vzper_delka
+import Vzper.Vzper_fce_obecne.vzper_fce_lambda as vzper_stihlost
 # ==========
 
 delky = np.linspace(1000, 10000, 100)  # delka vzpery od 1m do 10m
