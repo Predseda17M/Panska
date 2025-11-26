@@ -1,5 +1,6 @@
-from Vzper_euler import vzper, vzper_fce_delka_tyce
-from  Vzper_fce_obecne import vzper_fce_lambda, vzper_fce_Jmin, vzper_fce_reduk_delka 
+from Vzper_fce_obecne.vzper_fce import reduk_delka, stihlost
+from Vzper_euler.vzper_fce_krit_sila import vzper
+from Vzper_euler.vzper_fce_delka_tyce import vzper_delka
 
 # ==========
 # definice proměnných
@@ -22,11 +23,11 @@ print(f"Bezpečnost: {k1:.2f}")
 # vypočet délky vzpěry pro zadanou bezpečnost a sílu
 k2 = k1+1/2*k1
 F2 = 45000  # nová zatěžující síla [N]
-l2 = vzper_fce_delka_tyce(E, J_min, typ_vzperu, F2, k2)
+l2 = vzper_delka(E, J_min, typ_vzperu, F2, k2)
 
 print(f"Délka vzpěry pro bezpečnost {k2:.2f} je {l2:.2f} mm ")
 
 # vypocet stihlosti s novou delkou
-l02 = l2*typ
-lambda_vyp2 = vzper_fce_lambda(l02, S, J_min)
+l02 = reduk_delka(l2, typ_vzperu)
+lambda_vyp2 = stihlost(l02, S, J_min)
 print(f"Štíhlost vzpěry s délkou {l2:.2f} mm je {lambda_vyp2:.2f} ")
