@@ -5,10 +5,10 @@ import vzper_fce_lambda as vzper_stihlost
 # ==========
 # definice proměnných
 # ==========
-J_min = 5.67e4  # minimální kvadratický moment průřezu [mm4]
-S = 800     # plocha průřezu [mm2]
+J_min = 47500  # minimální kvadratický moment průřezu [mm4]
+S = 900     # plocha průřezu [mm2]
 L = 2000        # délka vzperu [mm]
-typ_vzperu = 3      # typ vzperu (1 pro jednostraně vetknutý, 2 pro oboustranně vetknutý atd.)
+typ_vzperu = 4      # typ vzperu (1 pro jednostraně vetknutý, 2 pro oboustranně vetknutý atd.)
 F = 35000    # působící síla [N]
 E = 2.1e5     # modul pružnosti materiálu [MPa]
 lambda_m = 108.0  # mezní štíhlost
